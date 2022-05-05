@@ -78,6 +78,33 @@
     display: none;
 }
 
+.gnav.navigation--open {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.gnav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gnav__item {
+    border: 1px solid #eee;
+    padding: 17px 20px;
+}
+
+.gnav__item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 /* main-contents */
 .mainContents {
     margin-top: 50px;
