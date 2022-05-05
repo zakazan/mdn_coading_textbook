@@ -38,11 +38,13 @@
     width: 25px;
     height: 2px;
     background-color: #fff;
+    transform-origin: top left;
+    transition: all 0.2s ease-in;
 }
 
 .hamburger__line {
     top: 16px;
-    right: 12px;
+    left: 12px;
 }
 
 .hamburger__line::before {
@@ -53,6 +55,22 @@
 .hamburger__line::after {
     content: '';
     top: 14px;
+}
+
+.hamburger.hamburger--open .hamburger__line {
+    top: 17px;
+    left: 16px;
+    transform: rotate(45deg);
+}
+
+.hamburger.hamburger--open .hamburger__line::before {
+    opacity: 0;
+}
+
+.hamburger.hamburger--open .hamburger__line::after {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg) translate(-12px, -13px);
 }
 
 /* nav */
