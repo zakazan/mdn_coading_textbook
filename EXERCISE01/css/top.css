@@ -109,3 +109,31 @@
 .mainContents {
     margin-top: 50px;
 }
+
+/* mainVisual */
+.mainVisual {
+    background-color: #37952f;
+    color: #fff;
+    padding: 20px 20px 36px;
+}
+
+.mainVisual__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'image'
+    'catch';
+    gap: 26px;
+}
+
+.mainVisual__catch {
+    grid-area: catch;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.mainVisual__image {
+    grid-area: image;
+}
