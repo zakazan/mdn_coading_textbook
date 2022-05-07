@@ -198,4 +198,40 @@
     max-width: 292px;
 }
 
+/* pickup */
+.pickupList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px 15px;
+    margin: 20px 0 55px;
+    padding: 0;
+}
 
+.pickupList__item {
+    width: calc((100% - 15px) /2);
+}
+
+.pickupList__item a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.pickupList__title {
+    position: relative;
+    margin-top: 8px;
+    margin-left: calc(1rem + 5.5px);    
+}
+
+.pickupList__title::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: calc(-1 * 1rem);
+    display: block;
+    width: 6.5px;
+    height: 6.5px;
+    transform: rotate(45deg);
+    border-top: solid 2px #333333;
+    border-right: solid 2px #333333;
+}  
