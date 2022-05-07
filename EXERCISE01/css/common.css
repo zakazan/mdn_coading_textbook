@@ -1,3 +1,25 @@
 html {
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+
+/* button */
+.buttonM {
+    text-decoration: none;
+    color: #fff;
+}
+
+.centerButton {
+    border: solid 2px #37952f;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.centerButton a {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.02rem;
+    margin-right: -1.02rem;
+}
