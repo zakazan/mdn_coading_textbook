@@ -149,6 +149,12 @@
     margin-top: 50px;
 }
 
+@media screen and (min-width: 768px), print {
+    .mainContents {
+        margin-top: 100px;
+    }
+}
+
 /* mainVisual */
 .mainVisual {
     background-color: #37952f;
@@ -177,6 +183,38 @@
 
 .mainVisual__image {
     grid-area: image;
+}
+
+@media screen and (min-width: 768px) {
+    .mainVisual {
+        min-height: 480px;
+        padding: 50px 0;
+    }
+    
+    .mainVisual__inner {
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'catch image';
+        gap: 92px;
+        max-width: 1084px;
+    }
+
+    .mainVisual__catch {
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1084px) {
+    .mainVisual {
+        padding: 50px 35px;
+    }
+
+    .mainVisual__catch {
+        font-size: 24px;
+    }
 }
 
 /* section */
