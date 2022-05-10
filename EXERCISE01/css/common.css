@@ -25,6 +25,12 @@ html {
     margin-right: -1.02rem;
 }
 
+@media screen and (min-width: 767px) {
+    .centerButton {
+        margin-top: 40px;
+    }
+}
+
 /* footer */
 .footer {
     background-color: #333333;

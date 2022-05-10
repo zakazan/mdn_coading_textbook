@@ -230,10 +230,21 @@
 .headingL {
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
+    font-size: 28px;
     letter-spacing: 0.14rem;
     line-height: 2.5rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 767px) {
+    .section {
+        margin-top: 80px;
+    }
+
+    .headingL {
+        font-size: 48px;
+    }
 }
 
 /* service */
@@ -279,6 +290,44 @@
     padding: 13px 0;
     margin: 32px auto;
     max-width: 292px;
+}
+
+@media screen and (min-width: 768px) {
+    .serviceList {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1084px;
+        margin: 40px auto 0;
+    }
+    
+    .serviceList__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        max-width: 348px;
+        /* SPのスタイルの打ち消しも兼ねる */
+        margin: 0 28px 0 0;
+        padding: 0 20px 20px;
+    }
+
+    .serviceList__item:last-of-type {
+        margin-right: 0;
+    }
+
+    .serviceList__thumb {
+        margin: 0 -20px;
+    }
+
+    .serviceList__data {
+        padding: 0;
+    }
+
+    .serviceList__btn {
+        margin: 32px 0 0;
+        width: 100%;
+    }
 }
 
 /* pickup */
