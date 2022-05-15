@@ -144,6 +144,13 @@
     }
 }
 
+/* タブレットサイズ用に変則的なブレークポイントを使用 */
+@media screen and (max-width: 900px) {
+    .gnav__item {
+        margin-right: 15px;
+    }
+}
+
 /* main-contents */
 .mainContents {
     margin-top: 50px;
