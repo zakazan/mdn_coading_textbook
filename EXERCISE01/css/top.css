@@ -334,6 +334,7 @@
 .pickupList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     gap: 20px 15px;
     margin: 20px 0 55px;
@@ -342,6 +343,7 @@
 
 .pickupList__item {
     width: calc((100% - 15px) /2);
+    max-width: 256px;
 }
 
 .pickupList__item a {
