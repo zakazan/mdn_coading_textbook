@@ -367,3 +367,21 @@
     border-top: solid 2px #333333;
     border-right: solid 2px #333333;
 }  
+
+@media screen and (min-width: 768px) {
+    .pickupList {
+        max-width: 1084px;
+        margin: 40px auto;
+        gap: 20px;
+    }
+
+    .pickupList__item {
+        max-width: calc(25% - 20px);
+    }
+
+    .pickupList__title {
+        font-size: 18px;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
