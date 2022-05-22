@@ -166,6 +166,40 @@ html {
     }
 }
 
+/* pageHeader */
+.pageHeaderL {
+    position: relative;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1084px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.pageHeaderL__title {
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #37952f;
+    text-transform: uppercase;
+}
+
+.main {
+    font-size: 30px;
+}
+
 /* section */
 .container {
     margin-top: 4px;

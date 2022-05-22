@@ -1,12 +1,4 @@
 /* mainVIsual */
-/* .mainVIsual {
-    background-image: ;
-} */
-
-.mainVIsual__inner {
-    max-width: 1084px;
-}
-
-.mainVIsual__catch {
-    
+._service {
+    background-image: url('../img/bg_header_service.jpg');
 }
