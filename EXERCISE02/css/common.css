@@ -13,6 +13,7 @@ html {
     width: 100%;
     background-color: #fff;
     padding: 14px 20px;
+    z-index: 50;
 }
 
 .header__logo {
@@ -172,9 +173,6 @@ html {
     height: 200px;
     background-position: center center;
     background-size: cover;
-    max-width: 1084px;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
 }
 
 .pageHeaderL__title {
@@ -198,6 +196,28 @@ html {
 
 .main {
     font-size: 30px;
+}
+
+@media screen and (min-width: 768px), print {
+    .pageHeaderL {
+        height: 460px;
+        width: 100%;
+    }
+
+    .pageHeaderL__title {
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        align-items: flex-start;
+    }
+
+    .sub {
+        font-size: 24px;
+    }
+
+    .main {
+        font-size: 48px;
+    }
 }
 
 /* section */
