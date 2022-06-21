@@ -13,9 +13,21 @@
     margin-top: 50px;
 }
 
+@media screen and (min-width: 768px), print {
+    .pageIntro {
+        margin-top: 80px;
+    }
+}
+
 .pageIntro__catch {
     font-size: 22px;
     line-height: 1.5;
+}
+
+@media screen and (min-width: 768px), print {
+        .pageIntro__catch {
+            text-align: center;
+        }
 }
 
 .pageIntro__txt {
@@ -25,3 +37,9 @@
     color: #707070;
 }
 
+@media screen and (min-width: 768px), print {
+    .pageIntro__txt {
+        margin: 55px auto 0;
+        max-width: 1084px;
+    }
+}
