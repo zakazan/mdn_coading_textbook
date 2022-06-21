@@ -2,3 +2,26 @@
 ._service {
     background-image: url('../img/bg_header_service.jpg');
 }
+
+/* container */
+.container {
+    padding: 0 20px;
+}
+
+/* pageIntro */
+.pageIntro {
+    margin-top: 50px;
+}
+
+.pageIntro__catch {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.pageIntro__txt {
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 2;
+    color: #707070;
+}
+
