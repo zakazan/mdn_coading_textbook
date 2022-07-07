@@ -357,6 +357,46 @@ html {
     font-size: 14px;
 }
 
+@media screen and (min-width: 768px), print {
+    .cvArea {
+        padding: 75px 0 80px;
+    }
+
+    .cvArea__title {
+        font-size: 28px;
+        margin-bottom: 45px;
+    }
+
+    .cvArea__title::before {
+        bottom: -15px;
+    }
+
+    .cvArea__txt {
+        font-size: 16px;
+    }
+
+    .cvArea__btn {
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+
+    .cvArea__tel {
+        font-size: 48px;
+    }
+
+    .cvArea__tel span {
+        font-size: 30px;
+    }
+
+    .cvArea__tel::before {
+        content: "";
+    }
+
+    .cvArea__biztime {
+        font-size: 16px;
+    }
+}
+
 /* footer */
 .footer {
     background-color: #333333;
