@@ -1,0 +1,253 @@
+/* mainVIsual */
+._service {
+    background-image: url('../img/bg_header_service.jpg');
+}
+
+/* container */
+.container {
+    padding: 0 20px;
+}
+
+/* pageIntro */
+.pageIntro {
+    margin-top: 50px;
+}
+
+.pageIntro__catch {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.pageIntro__txt {
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 2;
+    color: #707070;
+}
+
+@media screen and (min-width: 768px), print {
+    .pageIntro {
+        margin-top: 80px;
+    }
+
+    .pageIntro__catch {
+        text-align: center;
+    }
+
+    .pageIntro__txt {
+        margin: 55px auto 0;
+        max-width: 1084px;
+    }
+}
+
+/* service */
+.serviceWrap {
+    margin: 0 calc(50% - 50vw);
+    padding-bottom: 80px;
+    background-color: #f6fcf5;
+}
+
+.service {
+    margin-top: 40px;
+    height: auto;
+}
+
+.service:first-of-type {
+    margin-top: 77px;
+}
+
+
+.service__image {
+    position: relative;
+    z-index: 2;
+}
+
+
+.service__image img {
+    width: 100%;
+    height: auto;
+}
+
+.service__body {
+    position: relative;
+    margin: -50px 20px 0;
+    padding: 44px 20px 40px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.service__title .sub {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.service__title .main {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service__txt {
+    margin-top: 32px;
+}
+
+.service__txt p:not(:first-of-type) {
+    margin-top: 53px;
+}
+
+.service__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 33px 0 0;
+    padding: 0;
+}
+
+.service__photos li {
+    width: calc((100% - 20px) / 2);
+    list-style: none;
+    margin-top: 20px;
+}
+
+.service__photos li img  {
+    width: 100%;
+}
+
+@media screen and (min-width: 570px), print {
+    .service__photos {
+        justify-content: normal;
+    }
+    
+    .service__photos li {
+        width: calc((100% - 20px * 3) / 4);
+    }
+    
+    .service__photos li:not(:last-of-type) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .serviceWrap {
+        margin-top: 214px;
+        padding-bottom: 130px;
+    }
+
+    .service {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .service:not(:last-of-type) {
+        margin-bottom: 120px;
+    }
+
+    .service._reverse {
+        flex-direction: row;
+    }
+
+    .service:not(:first-of-type) {
+        margin-top: 50px;
+    }
+    
+    .service__image {
+        margin: -140px 0 0;
+        height: 500px;
+        width: 50%;
+    }
+
+    .service__image img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .service__body {
+        position: relative;
+        top: -70px;
+        left: 20px;
+        margin: 0;
+        padding: 40px;
+        max-width: 716px;
+        width: 50%;
+    }
+
+    ._reverse .service__body {
+        right: 20px;
+        left: auto;
+    }
+
+    /* title */
+    .service__title .sub {
+        font-size: 20px;
+    }
+
+    .service_title .sub {
+        font-size: 28px;
+    }
+
+    /* text */
+    .service__txt {
+        margin-top: 30px;
+    }
+
+    .service__txt p:not(:first-of-type) {
+        margin-top: 25px;
+    }
+
+    /* photos */
+    .service__photos {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .service__body {
+        left: calc((100vw - 1084px) / 2);
+    }
+    
+    ._reverse .service__body {
+        right: calc((100vw - 1084px) / 2);
+        left: auto;
+    }
+}
+
+
+/* ぱんくず */
+
+.breadcrumb {
+    display: none;
+    padding: 15px 50px;
+}
+
+.breadcrumb__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb__list li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.breadcrumb__list li:not(:last-of-type)::after {
+    content: ">";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.breadcrumb__list li a {
+    color: #37952f;
+}
+
+@media screen and (min-width: 767px), print {
+    .breadcrumb {
+        display: block;
+        background-color: #eee;
+    }
+}
