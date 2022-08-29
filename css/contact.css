@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*----------------------------------------
+	お問合せ専用
+----------------------------------------*/
+
+/*必要なスタイルを適宜追加してください。
+他のページでも使用する汎用的なパーツはcommon.cssへ記述してください*/
+
+/* ページ全体の調整 */
+.mainContents {
+	padding: 0 20px;
+}
+
+.pageHeaderM._contact {
+	margin: calc(50% - 50vw);
+}
+
+/* section */
+.m-section {
+	margin-top: 50px;
+}
+
+.m-sectioin__header {
+	position: relative;
+	font-size: 28px;
+	font-weight: bold;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+.m-sectioin__header::after {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 1px;
+	background-color: #37952f;
+}
+
+.m-section__text {
+	color: #707070;
+	line-height: 1.8;
+}
+
+/* form共通 */
+.o-form__wrap {
+	padding: 20px 0;
+}

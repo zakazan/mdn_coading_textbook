@@ -28,7 +28,109 @@
     </nav>
   </header>
   <main class="mainContents">
-    
+    <!-- ページヘッダー（中） -->
+    <div class="pageHeaderM _contact">
+      <h1 class="pageHeaderM__title">
+        <span class="sub">contact</span>
+        <span class="main">お問い合わせ</span>
+      </h1>
+      <p>弊社の事業・商品へのご質問・お問い合わせ等は以下のフォームからご連絡下さい。</p>
+    </div>
+    <section class="m-section">
+      <h2 class="m-sectioin__header">お問い合わせについて</h2>
+      <p class="m-section__text">通常、3営業日以内に担当者よりご連絡差し上げます。<br>
+        お急ぎの場合はお電話にてご連絡下さい。（TEL: 00-0000-0000　平日9:00〜17:00）</p>
+    </section>
+
+    <section class="m-section">
+      <h2 class="m-sectioin__header">お問い合わせフォーム</h2>
+      <div class="o-form__wrap">
+
+        <label>お問い合わせ種類</label>
+        <span>必須</span>
+        <select>
+          <option value="">選択してください</option>
+          <option value="1">弊社事業について</option>
+          <option value="2">弊社商品について</option>
+          <option value="3">採用について</option>
+          <option value="4">メディア取材について</option>
+          <option value="5">その他のお問い合わせ</option>
+        </select>
+      </div>
+
+      <div class="o-form__wrap">
+        <label>お問い合わせ内容</label>
+        <span>必須</span>
+        <textarea></textarea>
+      </div>
+
+      <fieldset>
+        <legend>お名前</legend>
+        <span>必須</span>
+        <ul>
+          <li>
+            <label>姓</label>
+            <input type="text">
+          </li>
+          <li>
+            <label>名</label>
+            <input type="text">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <span>必須</span>
+        <legend>フリガナ</legend>
+        <ul>
+          <li>
+            <label>セイ</label>
+            <input type="text">
+          </li>
+          <li>
+            <label>メイ</label>
+            <input type="text">
+          </li>
+        </ul>
+        <small>※全角カタカナでご入力下さい。</small>
+      </fieldset>
+
+      <div>
+        <label>メールアドレス</label>
+        <span>必須</span>
+        <input type="email">
+      </div>
+
+      <div>
+        <label>電話番号</label>
+        <span>必須</span>
+        <input type="tel">
+        <small>※半角数字でご入力下さい。ハイフン(-)は任意です。</small>
+      </div>
+
+      <fieldset>
+        <legend>法人／個人</legend>
+        <span>必須</span>
+        <ul>
+          <li><label><input type="radio"><span>法人</span></label></li>
+          <li><label><input type="radio"><span>個人</span></label></li>
+        </ul>
+      </fieldset>
+
+      <div>
+        <label for="">会社名</label>
+        <input type="text">
+        <small>※法人のお客様の場合は必ずご記入下さい。</small>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <p>「<a href="#">プライバシーポリシー</a>」をご確認いただき、個人情報の取扱いについて同意いただける場合は「同意する」を選択してください。</p>
+        <label><input type="radio"><span>個人情報保護方針に同意する</span></label>
+      </div>
+      <button>入力内容を確認する</button>
+    </section>
   </main>
   <footer class="footer">
     <ul class="footer__menu">

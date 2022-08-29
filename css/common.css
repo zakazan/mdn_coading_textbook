@@ -167,7 +167,7 @@ html {
     }
 }
 
-/* pageHeader */
+/* pageHeaderL */
 .pageHeaderL {
     position: relative;
     height: 200px;
@@ -203,7 +203,7 @@ html {
         height: 460px;
         width: 100%;
     }
-
+    
     .pageHeaderL__title {
         top: 50%;
         left: 50px;
@@ -218,6 +218,26 @@ html {
     .main {
         font-size: 48px;
     }
+}
+
+/* pageHeaderM */
+.pageHeaderM {
+    background-color: #eaf5e9;
+    text-align: center;
+    padding: 100px 0 93px;
+}
+
+.pageHeaderM__title {
+    margin-bottom: 40px;
+}
+
+.pageHeaderM__title .sub {
+    margin-bottom: 5px;
+}
+
+.pageHeaderM__title .sub,
+.pageHeaderM__title .main {
+    display: block;
 }
 
 /* section */
