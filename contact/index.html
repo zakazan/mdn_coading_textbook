@@ -45,91 +45,116 @@
     <section class="m-section">
       <h2 class="m-sectioin__header">お問い合わせフォーム</h2>
       <div class="o-form__wrap">
-
-        <label>お問い合わせ種類</label>
-        <span>必須</span>
-        <select>
-          <option value="">選択してください</option>
-          <option value="1">弊社事業について</option>
-          <option value="2">弊社商品について</option>
-          <option value="3">採用について</option>
-          <option value="4">メディア取材について</option>
-          <option value="5">その他のお問い合わせ</option>
-        </select>
+        <div class="o-form__title-wrap">
+          <label class="o-form__title">お問い合わせ種類</label>
+          <span class="a-green-label">必須</span>
+        </div>
+        <div class="o-form__select">
+          <select name="select">
+            <option value="">選択してください</option>
+            <option value="1">弊社事業について</option>
+            <option value="2">弊社商品について</option>
+            <option value="3">採用について</option>
+            <option value="4">メディア取材について</option>
+            <option value="5">その他のお問い合わせ</option>
+          </select>
+        </div>
       </div>
 
       <div class="o-form__wrap">
-        <label>お問い合わせ内容</label>
-        <span>必須</span>
-        <textarea></textarea>
+        <div class="o-form__title-wrap">
+          <label class="o-form__title">お問い合わせ内容</label>
+          <span class="a-green-label">必須</span>
+        </div>
+        <div class="o-form__textarea">
+          <textarea></textarea>
+        </div>
       </div>
 
-      <fieldset>
-        <legend>お名前</legend>
-        <span>必須</span>
-        <ul>
-          <li>
-            <label>姓</label>
-            <input type="text">
-          </li>
-          <li>
-            <label>名</label>
-            <input type="text">
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset>
-        <span>必須</span>
-        <legend>フリガナ</legend>
-        <ul>
-          <li>
-            <label>セイ</label>
-            <input type="text">
-          </li>
-          <li>
-            <label>メイ</label>
-            <input type="text">
-          </li>
-        </ul>
-        <small>※全角カタカナでご入力下さい。</small>
-      </fieldset>
-
-      <div>
-        <label>メールアドレス</label>
-        <span>必須</span>
-        <input type="email">
+      <div class="o-form__wrap">
+        <fieldset>
+          <div class="o-form__title-wrap">
+            <legend class="o-form__title">お名前</legend>
+            <span class="a-green-label">必須</span>
+          </div>
+          <ul class="o-form-list">
+            <li>
+              <label>姓</label>
+              <input type="text" class="o-form__text">
+            </li>
+            <li>
+              <label>名</label>
+              <input type="text" class="o-form__text">
+            </li>
+          </ul>
+        </fieldset>
       </div>
 
-      <div>
-        <label>電話番号</label>
-        <span>必須</span>
-        <input type="tel">
-        <small>※半角数字でご入力下さい。ハイフン(-)は任意です。</small>
+      <div class="o-form__wrap">
+        <fieldset>
+          <div class="o-form__title-wrap">
+            <legend class="o-form__title">フリガナ</legend>
+            <span class="a-green-label">必須</span>
+          </div>
+          <ul class="o-form-list">
+            <li>
+              <label>セイ</label>
+              <input type="text" class="o-form__text">
+            </li>
+            <li>
+              <label>メイ</label>
+              <input type="text" class="o-form__text">
+            </li>
+          </ul>
+          <small class="a-small-caption">※全角カタカナでご入力下さい。</small>
+        </fieldset>
       </div>
 
-      <fieldset>
-        <legend>法人／個人</legend>
-        <span>必須</span>
-        <ul>
-          <li><label><input type="radio"><span>法人</span></label></li>
-          <li><label><input type="radio"><span>個人</span></label></li>
-        </ul>
-      </fieldset>
+      <div class="o-form__wrap">
+        <div class="o-form__title-wrap">
+          <label class="o-form__title">メールアドレス</label>
+          <span class="a-green-label">必須</span>
+        </div>
+        <input type="email" class="o-form__text">
+      </div>
 
-      <div>
-        <label for="">会社名</label>
-        <input type="text">
-        <small>※法人のお客様の場合は必ずご記入下さい。</small>
+      <div class="o-form__wrap">
+        <div class="o-form__title-wrap">
+          <label class="o-form__title">電話番号</label>
+          <span class="a-green-label">必須</span>
+        </div>
+        <input type="tel" class="o-form__text">
+        <small class="a-small-caption">※半角数字でご入力下さい。ハイフン(-)は任意です。</small>
+      </div>
+
+      <div class="o-form__wrap">
+        <fieldset>
+          <div class="o-form__title-wrap">
+            <legend class="o-form__title">法人／個人</legend>
+            <span class="a-green-label">必須</span>
+          </div>
+          <ul class="o-form__list--radio">
+            <li><label><input type="radio" name="division"><span class="o-form__list--radio-text">法人</span></label></li>
+            <li><label><input type="radio" name="division"><span class="o-form__list--radio-text">個人</span></label></li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="o-form__wrap">
+        <div class="o-form__title-wrap">
+          <label class="o-form__title">会社名</label>
+        </div>
+        <input type="text" class="o-form__text">
+        <small class="a-small-caption">※法人のお客様の場合は必ずご記入下さい。</small>
       </div>
     </section>
 
-    <section>
-      <div>
-        <p>「<a href="#">プライバシーポリシー</a>」をご確認いただき、個人情報の取扱いについて同意いただける場合は「同意する」を選択してください。</p>
-        <label><input type="radio"><span>個人情報保護方針に同意する</span></label>
+    <section class="m-confirm-section">
+      <div class="m-confirm-box">
+        <p class="m-confirm-text">「<a href="#">プライバシーポリシー</a>」をご確認いただき、個人情報の取扱いについて同意いただける場合は「同意する」を選択してください。</p>
+        <label><input type="checkbox" class="m-confirm-checkbox"><span>個人情報保護方針に同意する</span></label>
       </div>
-      <button>入力内容を確認する</button>
+      <button class="buttonM orangeButton">入力内容を確認する</button>
     </section>
   </main>
   <footer class="footer">

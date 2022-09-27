@@ -295,6 +295,16 @@ html {
     margin-right: -1.02rem;
 }
 
+.orangeButton {
+    background-color: #FF7600;
+    border: none;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 400px;
+}
+
 @media screen and (min-width: 767px) {
     .centerButton {
         margin-top: 40px;
